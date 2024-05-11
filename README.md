@@ -1,5 +1,8 @@
 Project Overview: 
 
+![image](https://github.com/Nitish-UIUX/Entertainment_app/assets/85404125/11cd85ca-0235-4c08-ab42-dee13bdab58a)
+
+
 The Entertainment App allows users to search for their preferred movies or TV series and provides the added functionality of bookmarking their favorites. 
 
 
