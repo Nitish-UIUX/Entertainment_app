@@ -10,7 +10,7 @@ export default function Featured({ type, setGenre }) {
     const getRandomContent = async () => {
       try {
     
-        const res = await axios.get(`http://localhost:8800/api/movies/random?type=${type}`, {
+        const res = await axios.get(`http://localhost:8800/api/movies/random?type=Series`, {
           headers: {
             token:
               "Bearer "+JSON.parse(localStorage.getItem("user")).accessToken,
@@ -23,13 +23,13 @@ export default function Featured({ type, setGenre }) {
     };
     getRandomContent();
   }, [type]);
-
-  // console.log(content);
+  console.log(content);
   return (
     <div className="featured">
       {type && (
         <div className="category">
-          <span>{type === "movies" ? "Movies" : "Series"}</span>
+         <span>{type === "movies" ? "Movies" : "Series"}</span>
+
           <select
             name="genre"
             id="genre"
